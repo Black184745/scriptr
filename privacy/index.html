@@ -27,49 +27,56 @@
       <p class="meta">Effective November 19, 2026 &middot; Megistonia Corporation Limited (Megistonia Corporations)</p>
 
       <p>
-        This policy explains what information ScriptR collects, why it is collected, and how you
-        can export or erase it.
+        This policy explains what information ScriptR collects, how automated media screening works,
+        and how you can export or permanently delete your data.
       </p>
 
       <h2>1. Data you give us</h2>
       <p>
         When you create an account or post on ScriptR, we store your email address, password hash,
-        handle, display name, bio, profile photos, follow graph, notification settings, and the
-        content you publish or send (Scripts, replies, notes, polls, Loom posts, and direct
-        messages).
+        handle, display name, bio, profile photos, follow graph, notification preferences, and the
+        content you publish or send (Scripts, replies, notes, polls, Loom posts, voice clips, and
+        direct messages).
       </p>
 
-      <h2>2. Automated NSFW and safety checks</h2>
+      <h2>2. Quarantine safety screening, blocked hashes, and topic indexing</h2>
       <p>
-        Uploaded images, videos, audio clips, and reported posts are checked by automated NSFW and
-        safety filters so harmful media can be blurred or quarantined before publication. Private
-        user content is never used to train external AI models.
+        Image uploads, sampled video frames, profile/Loom images, and external link-preview
+        thumbnails are placed in private quarantine storage before promotion. Automated classifiers
+        run SHA-256 and 256-bit perceptual (PDQ) blocked-hash lookups, nudity/NSFW checks, and
+        apparent-age checks whenever sexual or suggestive signals are present.
+      </p>
+      <p>
+        Approved photos, video keyframes, and post text also generate compact vector embeddings to
+        match topic feeds. Rejected quarantine files are deleted; for child-safety or borderline-age
+        rejections, we retain the blocked file hashes, strike count, and review signals needed to
+        enforce bans and stop re-uploads.
       </p>
 
       <h2>3. Calls, audio rooms, and notifications</h2>
       <p>
-        Voice and video calls and live audio rooms route media streams strictly between the
-        participants in that call or room. Device push tokens are stored only to send notifications
-        you choose to receive.
+        Voice and video calls and live audio rooms route real-time media streams only between active
+        participants in that call or room. Device push tokens are stored strictly to deliver
+        notifications you enable. Voice clips bypass image/video decoders when promoted.
       </p>
 
       <h2>4. Crash reports</h2>
       <p>
-        Minimal crash diagnostics may be collected to fix bugs and app crashes. Email addresses and
-        message contents are not attached to crash payloads.
+        Minimal crash diagnostics may be collected to diagnose bugs and app crashes. Email addresses
+        and direct message contents are not attached to crash reports.
       </p>
 
-      <h2>5. No ad trackers or data sales</h2>
+      <h2>5. No ad trackers, data sales, or external AI training</h2>
       <p>
-        Megistonia Corporation Limited does not sell personal data to brokers and does not include
-        third-party ad tracking SDKs in ScriptR.
+        Megistonia Corporation Limited does not sell personal data, embed third-party ad tracking
+        SDKs, or hand your private content over to train external AI models.
       </p>
 
       <h2>6. Exporting and deleting your account</h2>
       <p>
         You can download a JSON copy of your account data or permanently delete your account inside
         the app under <strong>Settings &amp; Privacy &rarr; Account Security</strong>. Deleting your
-        account erases your profile, posts, messages, and uploaded media from active storage.
+        account erases your profile, posts, messages, and media buckets from active storage.
       </p>
 
       <h2>7. Contact</h2>
